@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconButton_Exit = new FontAwesome.Sharp.IconButton();
             this.iconButton_Logout = new FontAwesome.Sharp.IconButton();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
@@ -42,7 +43,6 @@
             this.panelTitileBar = new System.Windows.Forms.Panel();
             this.labelTitle = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.iconButton_Exit = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -67,6 +67,31 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(293, 880);
             this.panelMenu.TabIndex = 0;
+            // 
+            // iconButton_Exit
+            // 
+            this.iconButton_Exit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton_Exit.FlatAppearance.BorderSize = 0;
+            this.iconButton_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton_Exit.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton_Exit.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.iconButton_Exit.ForeColor = System.Drawing.Color.White;
+            this.iconButton_Exit.IconChar = FontAwesome.Sharp.IconChar.Xing;
+            this.iconButton_Exit.IconColor = System.Drawing.Color.White;
+            this.iconButton_Exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton_Exit.IconSize = 48;
+            this.iconButton_Exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton_Exit.Location = new System.Drawing.Point(0, 805);
+            this.iconButton_Exit.Margin = new System.Windows.Forms.Padding(4);
+            this.iconButton_Exit.Name = "iconButton_Exit";
+            this.iconButton_Exit.Rotation = 0D;
+            this.iconButton_Exit.Size = new System.Drawing.Size(293, 76);
+            this.iconButton_Exit.TabIndex = 3;
+            this.iconButton_Exit.Text = "Thoát";
+            this.iconButton_Exit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton_Exit.UseCompatibleTextRendering = true;
+            this.iconButton_Exit.UseVisualStyleBackColor = true;
+            this.iconButton_Exit.Click += new System.EventHandler(this.iconButton8_Click);
             // 
             // iconButton_Logout
             // 
@@ -292,31 +317,6 @@
             this.panelDesktop.Size = new System.Drawing.Size(970, 825);
             this.panelDesktop.TabIndex = 2;
             // 
-            // iconButton_Exit
-            // 
-            this.iconButton_Exit.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton_Exit.FlatAppearance.BorderSize = 0;
-            this.iconButton_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton_Exit.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton_Exit.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.iconButton_Exit.ForeColor = System.Drawing.Color.White;
-            this.iconButton_Exit.IconChar = FontAwesome.Sharp.IconChar.Xing;
-            this.iconButton_Exit.IconColor = System.Drawing.Color.White;
-            this.iconButton_Exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton_Exit.IconSize = 48;
-            this.iconButton_Exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton_Exit.Location = new System.Drawing.Point(0, 805);
-            this.iconButton_Exit.Margin = new System.Windows.Forms.Padding(4);
-            this.iconButton_Exit.Name = "iconButton_Exit";
-            this.iconButton_Exit.Rotation = 0D;
-            this.iconButton_Exit.Size = new System.Drawing.Size(293, 76);
-            this.iconButton_Exit.TabIndex = 3;
-            this.iconButton_Exit.Text = "Thoát";
-            this.iconButton_Exit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton_Exit.UseCompatibleTextRendering = true;
-            this.iconButton_Exit.UseVisualStyleBackColor = true;
-            this.iconButton_Exit.Click += new System.EventHandler(this.iconButton8_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -354,6 +354,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private FontAwesome.Sharp.IconButton iconButton_Logout;
         private FontAwesome.Sharp.IconButton iconButton_Exit;
+
     }
 }
 
