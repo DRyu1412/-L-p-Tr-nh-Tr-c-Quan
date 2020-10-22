@@ -76,7 +76,6 @@
     <Compile Include="FormQLTD.Designer.cs">
       <DependentUpon>FormQLTD.cs</DependentUpon>
     </Compile>
-    <Compile Include="fTableManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fLogin.resx">
