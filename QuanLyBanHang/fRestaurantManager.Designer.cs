@@ -292,7 +292,7 @@
             this.panelTitileBar.Location = new System.Drawing.Point(293, 0);
             this.panelTitileBar.Margin = new System.Windows.Forms.Padding(4);
             this.panelTitileBar.Name = "panelTitileBar";
-            this.panelTitileBar.Size = new System.Drawing.Size(970, 55);
+            this.panelTitileBar.Size = new System.Drawing.Size(1258, 55);
             this.panelTitileBar.TabIndex = 1;
             // 
             // labelTitle
@@ -314,14 +314,14 @@
             this.panelDesktop.Location = new System.Drawing.Point(293, 55);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(4);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(970, 825);
+            this.panelDesktop.Size = new System.Drawing.Size(1258, 825);
             this.panelDesktop.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1263, 880);
+            this.ClientSize = new System.Drawing.Size(1551, 880);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitileBar);
             this.Controls.Add(this.panelMenu);

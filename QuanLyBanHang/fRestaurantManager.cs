@@ -51,7 +51,7 @@ namespace QuanLyBanHang
                 leftBorderBtn.BackColor = color;
                 leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
                 leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();
+                leftBorderBtn.BringToFront();               
             }
         }
         private void DisableButton()
@@ -94,6 +94,7 @@ namespace QuanLyBanHang
         {
             ActivateButton(sender, RGBColors.color2);
             labelTitle.Text = "Quản lý nhân viên";
+            OpenChildForm(new fPersonnelManager());
         }
 
         private void iconButton3_Click(object sender, EventArgs e)

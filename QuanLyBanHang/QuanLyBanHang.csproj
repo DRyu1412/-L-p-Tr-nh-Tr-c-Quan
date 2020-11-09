@@ -64,6 +64,12 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="fPersonnelManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPersonnelManager.Designer.cs">
+      <DependentUpon>fPersonnelManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="fRestaurantManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPersonnelManager.resx">
+      <DependentUpon>fPersonnelManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fRestaurantManager.resx">
       <DependentUpon>fRestaurantManager.cs</DependentUpon>
