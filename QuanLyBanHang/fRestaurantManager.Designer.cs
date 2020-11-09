@@ -65,7 +65,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(293, 880);
+            this.panelMenu.Size = new System.Drawing.Size(293, 888);
             this.panelMenu.TabIndex = 0;
             // 
             // iconButton_Exit
@@ -292,7 +292,7 @@
             this.panelTitileBar.Location = new System.Drawing.Point(293, 0);
             this.panelTitileBar.Margin = new System.Windows.Forms.Padding(4);
             this.panelTitileBar.Name = "panelTitileBar";
-            this.panelTitileBar.Size = new System.Drawing.Size(1258, 55);
+            this.panelTitileBar.Size = new System.Drawing.Size(1342, 55);
             this.panelTitileBar.TabIndex = 1;
             // 
             // labelTitle
@@ -310,25 +310,29 @@
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelDesktop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(293, 55);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(4);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1258, 825);
+            this.panelDesktop.Size = new System.Drawing.Size(1342, 833);
             this.panelDesktop.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1551, 880);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.ClientSize = new System.Drawing.Size(1635, 888);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitileBar);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Phần Mềm Quản Lý Nhà Hàng";
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
