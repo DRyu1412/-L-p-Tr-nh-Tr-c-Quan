@@ -71,7 +71,7 @@
             this.tabControl_PM.Location = new System.Drawing.Point(-6, 0);
             this.tabControl_PM.Name = "tabControl_PM";
             this.tabControl_PM.SelectedIndex = 0;
-            this.tabControl_PM.Size = new System.Drawing.Size(1347, 862);
+            this.tabControl_PM.Size = new System.Drawing.Size(1350, 930);
             this.tabControl_PM.TabIndex = 0;
             // 
             // tabPage_PM
@@ -85,7 +85,7 @@
             this.tabPage_PM.Location = new System.Drawing.Point(4, 54);
             this.tabPage_PM.Name = "tabPage_PM";
             this.tabPage_PM.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_PM.Size = new System.Drawing.Size(1339, 804);
+            this.tabPage_PM.Size = new System.Drawing.Size(1342, 872);
             this.tabPage_PM.TabIndex = 0;
             this.tabPage_PM.Text = "Quản Lý Nhân Sự";
             this.tabPage_PM.UseVisualStyleBackColor = true;
@@ -115,7 +115,7 @@
             this.groupBox_EmpInfo.ForeColor = System.Drawing.Color.Purple;
             this.groupBox_EmpInfo.Location = new System.Drawing.Point(3, 53);
             this.groupBox_EmpInfo.Name = "groupBox_EmpInfo";
-            this.groupBox_EmpInfo.Size = new System.Drawing.Size(757, 336);
+            this.groupBox_EmpInfo.Size = new System.Drawing.Size(760, 404);
             this.groupBox_EmpInfo.TabIndex = 1;
             this.groupBox_EmpInfo.TabStop = false;
             this.groupBox_EmpInfo.Text = "Thông Tin Nhân Viên";
@@ -328,8 +328,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1339, 765);
+            this.ClientSize = new System.Drawing.Size(1342, 833);
             this.Controls.Add(this.tabControl_PM);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fPersonnelManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "fPersonnelManager";
