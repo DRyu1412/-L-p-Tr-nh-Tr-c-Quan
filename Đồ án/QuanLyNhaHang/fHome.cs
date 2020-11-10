@@ -24,7 +24,7 @@ namespace QuanLyNhaHang
             random = new Random();
             this.ControlBox = false;
             this.Text = String.Empty;
-            //this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
             labelXinChao.Text = "Xin chào, " + fLogin.tenChuTaiKhoan;
         }
         private void LoadNextImage()
