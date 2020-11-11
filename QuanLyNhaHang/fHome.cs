@@ -109,7 +109,7 @@ namespace QuanLyNhaHang
 
         private void btnQLB_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Form(), sender);
+            OpenChildForm(new fBan(), sender);
         }
 
         private void btnDT_Click(object sender, EventArgs e)
