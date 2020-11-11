@@ -1,0 +1,17 @@
+C:\Users\khaih\Desktop\QuanLyNhaHang\bin\Debug\QuanLyNhaHang.exe.config
+C:\Users\khaih\Desktop\QuanLyNhaHang\bin\Debug\QuanLyNhaHang.exe
+C:\Users\khaih\Desktop\QuanLyNhaHang\bin\Debug\QuanLyNhaHang.pdb
+C:\Users\khaih\Desktop\QuanLyNhaHang\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.csprojAssemblyReference.cache
+C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.fHome.resources
+C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.Properties.Resources.resources
+C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.csproj.GenerateResource.cache
+C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.csproj.CoreCompileInputs.cache
+C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.csproj.CopyComplete
+C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.exe
+C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.pdb
+C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.fThucDon.resources
+C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.fThemMon.resources
+C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.fLogin.resources
+C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.fNhanVien.resources
+C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.fHoaDon.resources
