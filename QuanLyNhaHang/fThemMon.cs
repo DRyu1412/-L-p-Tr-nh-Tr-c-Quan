@@ -24,13 +24,10 @@ namespace QuanLyNhaHang
             else if (tmp == 1)
             {
                 labelTitle.Text = "Sửa món ăn";
-                using (fThucDon fTD = new fThucDon())
-                {
-                    tenmon = fTD.TenMon;
-                    gia = fTD.Gia;
-                    dvt = fTD.DVT;
-                    id = fTD.ID;
-                }
+                id = fThucDon.ID;
+                tenmon = fThucDon.TenMon;
+                gia = fThucDon.Gia;
+                dvt = fThucDon.DVT;
                 textBox1.Text = tenmon;
                 textBox2.Text = gia;
                 textBox3.Text = dvt;
@@ -60,18 +57,19 @@ namespace QuanLyNhaHang
         private void updateValues()
         {
             DialogResult dR = MessageBox.Show("Bạn có muốn sửa món ăn này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            
-            
             if (dR == DialogResult.Yes)
             {
+                string tenmon, gia, dvt;
                 tenmon = getUpper(textBox1.Text);
                 gia = getUpper(textBox2.Text);
                 dvt = getUpper(textBox3.Text);
-                String sql = "update thucdon set tenmon = '" + tenmon + "', gia = " + gia + ", dvt = '" + dvt + "' where id = " + id;
-                SqlCommand command = new SqlCommand(sql, fThucDon.con);
-                SqlDataAdapter adapter = new SqlDataAdapter();
-                adapter.InsertCommand = command;
-                adapter.InsertCommand.ExecuteNonQuery();
+                string connectionString = @"Data Source=DESKTOP-07V1CVG\SQLEXPRESS;Initial Catalog=QuanLyNhaHang;User ID=uit_lttq;Password=123456789";
+                SqlConnection con = new SqlConnection(connectionString);
+                string sql = "update thucdon set tenmon = '" + tenmon + "', dvt = '" + dvt + "', gia = '" + gia + "' where id = " + id;
+                SqlCommand command = new SqlCommand(sql, con);
+                if (con.State != ConnectionState.Open) con.Open();
+                command.ExecuteNonQuery();
+                con.Close();
                 this.Dispose();
             }
         }
@@ -84,11 +82,13 @@ namespace QuanLyNhaHang
                 tenmon = getUpper(textBox1.Text);
                 gia = getUpper(textBox2.Text);
                 dvt = getUpper(textBox3.Text);
-                String sql = "insert into thucdon values (N'" + tenmon + "'," + gia + ", N'" + dvt + "')";
-                SqlCommand command = new SqlCommand(sql, fThucDon.con);
-                SqlDataAdapter adapter = new SqlDataAdapter();
-                adapter.InsertCommand = command;
-                adapter.InsertCommand.ExecuteNonQuery();
+                string connectionString = @"Data Source=DESKTOP-07V1CVG\SQLEXPRESS;Initial Catalog=QuanLyNhaHang;User ID=uit_lttq;Password=123456789";
+                SqlConnection con = new SqlConnection(connectionString);
+                string sql = "insert into thucdon values (N'" + tenmon + "'," + gia + ", N'" + dvt + "')";
+                SqlCommand command = new SqlCommand(sql, con);
+                if (con.State != ConnectionState.Open) con.Open();
+                command.ExecuteNonQuery();
+                con.Close();
                 this.Dispose();
             }
         }

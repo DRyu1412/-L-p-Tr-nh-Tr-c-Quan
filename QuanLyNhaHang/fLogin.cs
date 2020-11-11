@@ -28,7 +28,7 @@ namespace QuanLyNhaHang
         {
             if (isFormValid())
             {
-                string connectionString = @"Data Source=DESKTOP-07V1CVG\SQLEXPRESS;Initial Catalog=QuanLyNhaHang;Integrated Security=True";
+                string connectionString = @"Data Source=DESKTOP-07V1CVG\SQLEXPRESS;Initial Catalog=QuanLyNhaHang;User ID=uit_lttq;Password=123456789";
                 SqlConnection con = new SqlConnection(connectionString);
                 string query = "select tendangnhap, matkhau, hoten from taikhoan where tendangnhap = '" + txtUser.Text + "'";
                 SqlCommand command = new SqlCommand(query, con);

@@ -15,3 +15,5 @@ C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.fThemMon.resources
 C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.fLogin.resources
 C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.fNhanVien.resources
 C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.fHoaDon.resources
+C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.fBan.resources
+C:\Users\khaih\Desktop\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.fChiTietHoaDon.resources
