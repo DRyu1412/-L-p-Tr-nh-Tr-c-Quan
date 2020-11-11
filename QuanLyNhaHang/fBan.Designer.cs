@@ -120,7 +120,7 @@
             // 
             // flpTable
             // 
-            this.flpTable.Location = new System.Drawing.Point(16, 58);
+            this.flpTable.Location = new System.Drawing.Point(13, 58);
             this.flpTable.Margin = new System.Windows.Forms.Padding(4);
             this.flpTable.Name = "flpTable";
             this.flpTable.Size = new System.Drawing.Size(656, 695);

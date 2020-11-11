@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuanLyNhaHang.DAO;
+using QuanLyNhaHang.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,8 +17,21 @@ namespace QuanLyNhaHang
         public fBan()
         {
             InitializeComponent();
+
+            LoadTable();
         }
 
+        void LoadTable()
+        {
+            List<Table> tablelist = TableDAO.Instance.LoadTableList();
+
+            foreach (Table item in tablelist)
+            {
+                Button btn = new Button() { Width = TableDAO.TableWidth, Height = TableDAO.TableHeight };
+                btn.Text = item.TenBan + "\n" + item.TrangThai;
+                flpTable.Controls.Add(btn);
+            }
+        }
 
     }
 }
