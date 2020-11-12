@@ -47,13 +47,15 @@
             // 
             // listView_Bill
             // 
+            this.listView_Bill.GridLines = true;
             this.listView_Bill.HideSelection = false;
             this.listView_Bill.Location = new System.Drawing.Point(680, 152);
             this.listView_Bill.Margin = new System.Windows.Forms.Padding(4);
             this.listView_Bill.Name = "listView_Bill";
-            this.listView_Bill.Size = new System.Drawing.Size(639, 517);
+            this.listView_Bill.Size = new System.Drawing.Size(640, 517);
             this.listView_Bill.TabIndex = 1;
             this.listView_Bill.UseCompatibleStateImageBehavior = false;
+            this.listView_Bill.View = System.Windows.Forms.View.List;
             // 
             // panel2
             // 
@@ -120,6 +122,7 @@
             // 
             // flpTable
             // 
+            this.flpTable.AutoScroll = true;
             this.flpTable.Location = new System.Drawing.Point(13, 58);
             this.flpTable.Margin = new System.Windows.Forms.Padding(4);
             this.flpTable.Name = "flpTable";
@@ -135,7 +138,7 @@
             this.iconButton_CheckOut.IconColor = System.Drawing.Color.Blue;
             this.iconButton_CheckOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton_CheckOut.IconSize = 48;
-            this.iconButton_CheckOut.Location = new System.Drawing.Point(1136, 677);
+            this.iconButton_CheckOut.Location = new System.Drawing.Point(1136, 676);
             this.iconButton_CheckOut.Name = "iconButton_CheckOut";
             this.iconButton_CheckOut.Rotation = 0D;
             this.iconButton_CheckOut.Size = new System.Drawing.Size(184, 76);
@@ -150,14 +153,14 @@
             this.iconButton_Discount.BackColor = System.Drawing.Color.White;
             this.iconButton_Discount.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.iconButton_Discount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton_Discount.IconChar = FontAwesome.Sharp.IconChar.MoneyBillAlt;
+            this.iconButton_Discount.IconChar = FontAwesome.Sharp.IconChar.Percent;
             this.iconButton_Discount.IconColor = System.Drawing.Color.Blue;
             this.iconButton_Discount.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton_Discount.IconSize = 48;
-            this.iconButton_Discount.Location = new System.Drawing.Point(990, 709);
+            this.iconButton_Discount.IconSize = 30;
+            this.iconButton_Discount.Location = new System.Drawing.Point(979, 709);
             this.iconButton_Discount.Name = "iconButton_Discount";
             this.iconButton_Discount.Rotation = 0D;
-            this.iconButton_Discount.Size = new System.Drawing.Size(140, 44);
+            this.iconButton_Discount.Size = new System.Drawing.Size(151, 44);
             this.iconButton_Discount.TabIndex = 3;
             this.iconButton_Discount.Text = "Giảm Giá";
             this.iconButton_Discount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -168,17 +171,12 @@
             // 
             this.num_Discount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.num_Discount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num_Discount.Location = new System.Drawing.Point(990, 678);
+            this.num_Discount.Location = new System.Drawing.Point(980, 677);
             this.num_Discount.Margin = new System.Windows.Forms.Padding(4);
             this.num_Discount.Name = "num_Discount";
-            this.num_Discount.Size = new System.Drawing.Size(139, 30);
+            this.num_Discount.Size = new System.Drawing.Size(150, 30);
             this.num_Discount.TabIndex = 2;
             this.num_Discount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.num_Discount.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // iconButton_SwitchTable
             // 
