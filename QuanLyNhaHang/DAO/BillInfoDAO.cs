@@ -33,5 +33,11 @@ namespace QuanLyNhaHang.DAO
 
             return listBillInfo;
         }
+
+        public void InsertBillInfo(int idHoaDon, int idMonAn, int SoLuong )
+        {
+            DataProvider.Instance.ExecuteQuery("EXEC USP_InsertCTHD @idHoaDon , @idMonAn , @SoLuong", new object[] { idHoaDon, idMonAn, SoLuong });
+        }
+
     }
 }

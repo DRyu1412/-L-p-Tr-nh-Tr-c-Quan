@@ -28,6 +28,7 @@ namespace QuanLyNhaHang.DAO
                              "from CTHD, HoaDon, MonAn " +
                              "where CTHD.idHoaDon = HoaDon.idHoaDon " +
                              "and CTHD.idMonAn = MonAn.idMonAn " +
+                             "and TinhTrang = 0" +
                              "and HoaDon.idBan = " + id;
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 

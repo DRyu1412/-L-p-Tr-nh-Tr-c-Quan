@@ -26,13 +26,28 @@ namespace QuanLyNhaHang.DAO
 
        
 
-        public DataTable ExecuteQuery(string query)
+        public DataTable ExecuteQuery(string query, object [] parameter = null)
         {
             DataTable data = new DataTable();
             using (SqlConnection connection = new SqlConnection(connectionStr))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
+
+                if(parameter !=null)
+                {
+                    string[] listPara = query.Split(' ');
+                    int i = 0;
+                    foreach (string item in listPara)
+                    {
+                        if (item.Contains('@'))
+                        {
+                            command.Parameters.AddWithValue(item, parameter[i]);
+                            i++;
+                        }
+                    }
+                }
+
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 adapter.Fill(data);
 
@@ -43,7 +58,7 @@ namespace QuanLyNhaHang.DAO
         public int ExecuteNonQuery(string query)
         {
             int data = 0;
-            using (SqlConnection connection = new SqlConnection())
+            using (SqlConnection connection = new SqlConnection(connectionStr))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
@@ -54,5 +69,21 @@ namespace QuanLyNhaHang.DAO
             }
             return data;
         }
+        public object ExecuteScarlar(string query)
+        {
+            object data = 0;
+            using (SqlConnection connection = new SqlConnection(connectionStr))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+
+                data = command.ExecuteScalar();
+
+                connection.Close();
+            }
+            return data;
+        }
+
+
     }
 }
