@@ -40,6 +40,10 @@
             this.num_Discount = new System.Windows.Forms.NumericUpDown();
             this.iconButton_SwitchTable = new FontAwesome.Sharp.IconButton();
             this.comboBox_SwitchTable = new System.Windows.Forms.ComboBox();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_FoodCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_Discount)).BeginInit();
@@ -47,6 +51,12 @@
             // 
             // listView_Bill
             // 
+            this.listView_Bill.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.listView_Bill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView_Bill.GridLines = true;
             this.listView_Bill.HideSelection = false;
             this.listView_Bill.Location = new System.Drawing.Point(680, 152);
@@ -55,7 +65,7 @@
             this.listView_Bill.Size = new System.Drawing.Size(640, 517);
             this.listView_Bill.TabIndex = 1;
             this.listView_Bill.UseCompatibleStateImageBehavior = false;
-            this.listView_Bill.View = System.Windows.Forms.View.List;
+            this.listView_Bill.View = System.Windows.Forms.View.Details;
             // 
             // panel2
             // 
@@ -206,6 +216,29 @@
             this.comboBox_SwitchTable.Size = new System.Drawing.Size(223, 24);
             this.comboBox_SwitchTable.TabIndex = 0;
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "        Tên Món";
+            this.columnHeader1.Width = 173;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Số Lượng";
+            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader2.Width = 98;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Đơn Giá";
+            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader3.Width = 167;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Thành tiền";
+            this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader4.Width = 197;
+            // 
             // fBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -244,5 +277,9 @@
         private System.Windows.Forms.NumericUpDown num_Discount;
         private FontAwesome.Sharp.IconButton iconButton_SwitchTable;
         private System.Windows.Forms.ComboBox comboBox_SwitchTable;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }

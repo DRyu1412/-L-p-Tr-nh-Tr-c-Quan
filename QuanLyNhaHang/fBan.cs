@@ -48,8 +48,18 @@ namespace QuanLyNhaHang
 
         void ShowBill(int id)
         {
-            int idBill = BillDAO.Instance.GetUnCheckBillIDByTableID(id);
-            List<BillInfo> listBillInfo = BillInfoDAO.Instance.GetListBillInfo(idBill);
+            listView_Bill.Items.Clear();
+
+            List<DTO.Menu> listBillInfo = MenuDAO.Instance.GetListMenuByTableID(id);
+
+            foreach (DTO.Menu item in listBillInfo)
+            {
+                ListViewItem lsvItem = new ListViewItem(item.TenMon.ToString());
+                lsvItem.SubItems.Add(item.SoLuong.ToString());
+                lsvItem.SubItems.Add(item.Gia.ToString());
+                lsvItem.SubItems.Add(item.ThanhTien.ToString());
+                listView_Bill.Items.Add(lsvItem);
+            }
 
         }
 
