@@ -30,6 +30,7 @@ namespace QuanLyNhaHang.DAO
             return -1;
         }
         
+
         public void InsertBill(int id)
         {
             DataProvider.Instance.ExecuteQuery("EXEC USP_InsertBill @idBan", new object[] { id });
@@ -38,6 +39,12 @@ namespace QuanLyNhaHang.DAO
         public int GetMaxIDBill()
         {
             return (int)DataProvider.Instance.ExecuteScarlar("select MAX(idHoaDon) from HoaDon");
+        }
+
+        public void CheckOut(int id)
+        {
+            string query = "UPDATE HoaDon SET TinhTrang = 1 WHERE idHoaDon = " + id;
+            DataProvider.Instance.ExecuteNonQuery(query);
         }
 
     }

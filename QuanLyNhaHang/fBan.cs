@@ -42,6 +42,7 @@ namespace QuanLyNhaHang
 
         void LoadTable()
         {
+            flpTable.Controls.Clear();
             List<Table> tablelist = TableDAO.Instance.LoadTableList();
 
             foreach (Table item in tablelist)
@@ -130,6 +131,24 @@ namespace QuanLyNhaHang
             }
 
             ShowBill(table.IDBan);
+            LoadTable();
+        }
+
+        private void iconButton_CheckOut_Click(object sender, EventArgs e)
+        {
+            Table table = listView_Bill.Tag as Table;
+
+            int idBill = BillDAO.Instance.GetUnCheckBillIDByTableID(table.IDBan);
+
+            if(idBill != -1)
+            {
+                if(MessageBox.Show("Bạn có chắc muốn thanh toán " + table.TenBan, "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    BillDAO.Instance.CheckOut(idBill);
+                    ShowBill(table.IDBan);
+                    LoadTable();
+                }
+            }
         }
     }
 }

@@ -190,6 +190,7 @@
             this.iconButton_CheckOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iconButton_CheckOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton_CheckOut.UseVisualStyleBackColor = true;
+            this.iconButton_CheckOut.Click += new System.EventHandler(this.iconButton_CheckOut_Click);
             // 
             // iconButton_Discount
             // 
